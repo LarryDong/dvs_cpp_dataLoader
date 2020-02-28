@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+                        "command":"g++",
+            "args":[
+                "-std=c++17",
+                "-g", "src/main.cpp", "src/EventStream.cpp", "src/FrameStream.cpp",
+                "-o", "main.out",
+                "-I", "include",
+                "-I","/usr/local/include",
+                "-I","/usr/include",
+                "-l", "pthread",
+                "-l", "opencv_core",
+                "-l", "opencv_highgui",
+                "-l", "opencv_imgproc",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            //"problemMatcher":"$gcc"
+        }
+    ]
+}
