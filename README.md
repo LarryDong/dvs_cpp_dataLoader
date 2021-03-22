@@ -23,9 +23,9 @@ So far, this code is only used for load data from a DVS/DAVIS dataset. Such as [
 2. Download dataset from [http://rpg.ifi.uzh.ch/davis_data.html](http://rpg.ifi.uzh.ch/davis_data.html), and extract.
 
 3. Run **demo** with dataset path:
-
-   `$ ./demo  /path/to/the/dataset/folder
-
+```bash
+   $ ./demo  /path/to/the/dataset/folder
+```
 ## Futher work
 
 1. Will use one thread to generate 2 streams together with a synchronized system time.
